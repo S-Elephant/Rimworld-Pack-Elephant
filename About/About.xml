@@ -1,0 +1,16 @@
+<ModMetaData>
+	<name>Pack Elephants</name>
+	<author>Squirting Elephant</author>
+	<supportedVersions>
+		<li>1.0</li>
+		<li>1.1</li>
+		<li>1.2</li>
+	</supportedVersions>
+	<packageId>SquirtingElephant.PackElephants</packageId>
+	<description>Alters elephants by increasing their carrying capacity from 300 --> 2000. Some other values (like pregnancy and taming) have been altered for balance. The intention was mainly that in endgame animals drain too much performance, yet I need them for caravan weight.
+	
+- Performance impact: None (will even improve it if you keep less animals now).
+- Mod is XML only and overwrites nothing. Contains 6 XPath operations.
+- Can safely be added to an existing game.
+- Can safely be removed from an existing game as long as you don't have any elephants with gear walking around (or in a caravan) with a carry-weight of more than the vanilla 300.</description>
+</ModMetaData>
