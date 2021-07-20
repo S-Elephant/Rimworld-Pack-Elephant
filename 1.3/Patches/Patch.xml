@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Elephant"]/race/baseBodySize</xpath>
+		<value>
+			<baseBodySize>25</baseBodySize>	<!-- default is 4 -->
+		</value>
+	</Operation>
+		
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Elephant"]/statBases/MaxHitPoints</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>Defs/ThingDef[defName="Elephant"]/statBases</xpath>
+			<value>
+				<MaxHitPoints>200</MaxHitPoints> <!-- default is 100 -->
+			</value>
+		</nomatch>
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Elephant"]/statBases/MaxHitPoints</xpath>
+			<value>
+				<MaxHitPoints>200</MaxHitPoints> <!-- default is 100 -->
+			</value>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Elephant"]/statBases/MarketValue</xpath>
+		<value>
+			<MarketValue>1200</MarketValue> <!-- default is 600 -->
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="Elephant"]/race/gestationPeriodDays</xpath>
+		<value>
+			<gestationPeriodDays>192</gestationPeriodDays> <!-- default is 48 -->
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Elephant"]/combatPower</xpath>
+		<value>
+			<combatPower>390</combatPower> <!-- default is 260 -->
+		</value>
+	</Operation>
+</Patch>

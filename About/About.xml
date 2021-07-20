@@ -5,6 +5,7 @@
 		<li>1.0</li>
 		<li>1.1</li>
 		<li>1.2</li>
+		<li>1.3</li>
 	</supportedVersions>
 	<packageId>SquirtingElephant.PackElephants</packageId>
 	<description>Alters elephants by increasing their carrying capacity from 300 --> 2000. Some other values (like pregnancy and taming) have been altered for balance. The intention was mainly that in endgame animals drain too much performance, yet I need them for caravan weight.
